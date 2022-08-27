@@ -13,6 +13,11 @@ renderer.setClearColor(0xb7c3f3, 1);
 const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
 
+
+//BGM
+const bgMusic = new Audio('./bg.mp3')
+bgMusic.loop = true
+
 //Global Variables
 
 const start_position = 3;
@@ -186,7 +191,3 @@ window.addEventListener('keyup', (e) => {
     }
 });
 
-
-//BGM
-const bgMusic = new Audio('music_bg.mp3')
-bgMusic.loop = true
