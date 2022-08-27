@@ -9,7 +9,6 @@ document.body.appendChild(renderer.domElement);
 renderer.setClearColor(0xb7c3f3, 1);
 
 
-
 //Let there be light
 const light = new THREE.AmbientLight(0xffffff);
 scene.add(light);
@@ -186,3 +185,8 @@ window.addEventListener('keyup', (e) => {
         player.stop();
     }
 });
+
+
+//BGM
+const bgMusic = new Audio('music_bg.mp3')
+bgMusic.loop = true
