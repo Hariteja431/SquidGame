@@ -16,6 +16,7 @@ scene.add(light);
 
 //BGM
 const bgMusic = new Audio('./bg.mp3')
+bgMusic.play();
 bgMusic.loop = true
 
 //Global Variables
